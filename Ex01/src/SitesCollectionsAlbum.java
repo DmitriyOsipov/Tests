@@ -11,9 +11,11 @@ public class SitesCollectionsAlbum {
     public String toString(){
         StringBuilder builder = new StringBuilder();
         for (SiteCollection collection: sitesAlbum){
-            builder.append("{\n");
-            builder.append(collection.toString());
-            builder.append("\n}\n");
+            if (collection!=null) {
+                builder.append("{\n");
+                builder.append(collection.toString());
+                builder.append("\n}\n");
+            }
         }
         return builder.toString().trim();
     }

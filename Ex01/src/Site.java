@@ -1,7 +1,7 @@
 
 
 public class Site {
-    public static final int FIELDS_COUNT = 5;
+    //public static final int FIELDS_COUNT = 5;
     private final boolean CHECK_KEYWORDS = false;
     private final int id;
     private final String name;
