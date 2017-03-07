@@ -14,13 +14,13 @@ public class SiteCollection {
 
     public String toString(){
         StringBuilder builder = new StringBuilder();
-        builder.append("\t\"collectionId\": \"" + collectionId + "\"");
-        builder.append("\n\t\"sites\": [");
+        builder.append(" \"collectionId\": \"" + collectionId + "\"");
+        builder.append("\n \"sites\": [");
         for(Site site: sites){
             builder.append("\n");
             builder.append(site.toString());
         }
-        builder.append("\n\t]");
+        builder.append("\n ]");
         return builder.toString();
     }
 }

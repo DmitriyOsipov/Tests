@@ -29,14 +29,14 @@ public class Site {
     @Override
     public String toString(){
         if (checkKeywords()) {
-            StringBuilder builder = new StringBuilder("\t{");
+            StringBuilder builder = new StringBuilder("  {");
             int mobileI = (mobile) ? 1 : 0;
-            builder.append("\n\t\t\"id\": \"" + id + "\"");
-            builder.append("\n\t\t\"name\": \"" + name + "\"");
-            builder.append("\n\t\t\"mobile\": \"" + mobileI + "\"");
-            builder.append("\n\t\t\"keywords\": \"" + keywords + "\"");
-            builder.append("\n\t\t\"score\": \"" + score + "\"");
-            builder.append("\n\t}");
+            builder.append("\n   \"id\": \"" + id + "\"");
+            builder.append("\n   \"name\": \"" + name + "\"");
+            builder.append("\n   \"mobile\": \"" + mobileI + "\"");
+            builder.append("\n   \"keywords\": \"" + keywords + "\"");
+            builder.append("\n   \"score\": \"" + score + "\"");
+            builder.append("\n  }");
             return builder.toString();
         }
         return "";

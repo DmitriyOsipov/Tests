@@ -13,7 +13,7 @@ public class SitesCollectionsAlbum {
         for (SiteCollection collection: sitesAlbum){
             builder.append("{\n");
             builder.append(collection.toString());
-            builder.append("\n}");
+            builder.append("\n}\n");
         }
         return builder.toString().trim();
     }
