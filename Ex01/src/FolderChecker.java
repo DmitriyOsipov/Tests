@@ -14,6 +14,11 @@ public class FolderChecker {
         return ((file.exists())&&(file.isFile()));
     }
 
+    public boolean isFile(String filename){
+        File file = new File(filename);
+        return file.isFile();
+    }
+
     private FilenameFilter createFilter(String extension){
         String filter = (extension.startsWith("."))? extension : "."+extension;
         FilenameFilter fileFilter = new FilenameFilter() {

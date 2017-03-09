@@ -10,6 +10,7 @@ public class Test {
         Parser parser1 = new ParserJson(fileIn2);
         album.addCollection(parser1.parse());
 
-        fw.writeFile(fileOut, album.toString());
+        //fw.writeFile(fileOut, album.toString());
+        fw.writeFile(fileOut, album.toStringJ());
     }
 }
